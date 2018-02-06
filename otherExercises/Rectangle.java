@@ -12,11 +12,6 @@ public class Rectangle implements Shape{
         return sideA*sideB;
     }
     
-    public Rectangle shapeFactory(int angles){
-        if(angles == Angles.RECTANGLE.getValue()){
-            return new Rectangle(sideA,sideB);
-        }
-        return null;
-    }
+
 }
 

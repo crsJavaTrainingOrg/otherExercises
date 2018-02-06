@@ -8,15 +8,13 @@ public class Circle implements Shape{
         r = radius;
         
     }
+    public double getRadius(){
+        return r;
+    }
     
     public double areaOfShape(){
         return Math.PI*(r*r);
     }
     
-    public Circle shapeFactory(int angles){
-        if(angles == Angles.CIRCLE.getValue()){
-            return new Circle(r);
-        }
-        return null;
-    }
+
 }

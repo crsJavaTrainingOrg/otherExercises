@@ -27,7 +27,15 @@ public class Array{
                 break;
             }
         }
-        System.out.println(anArray.length);
+        int counter = 0;
+        for(int k = 0; k < anArray.length; k++){
+            if(anArray[k] == 1){
+                counter++;
+            }
+        }
+        
+            
+        System.out.println(counter);
     }
 }
                         
