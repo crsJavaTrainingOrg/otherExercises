@@ -10,7 +10,10 @@ public class Triangle implements Shape{
     private double sideC;
     
     
-    public Triangle(double a, double b, double c){
+    public Triangle(double a, double b, double c)  {
+        if(a+b < c || a+c < b || b+c < a){
+            throw new IllegalShapeParameterException();
+        }
         
         sideA = a;
         sideB = b;
